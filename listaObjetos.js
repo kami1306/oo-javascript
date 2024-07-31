@@ -14,3 +14,13 @@ cliente.endereco = [
 },
 ];
 
+cliente.endereco.push({
+    rua :"R. joseph ladder",
+    numero: 404,
+    apartamento:false,
+});
+
+const listaApenasApartamentos = cliente.endereco.filter(
+    (endereco) => endereco.apartamento === true 
+);
+console.log(listaApenasApartamentos);
